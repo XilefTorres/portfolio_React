@@ -43,7 +43,7 @@ export default function Footer() {
                                 <textarea className="bg-gray-300 p-2 rounded-xl" required cols={30} rows={3} placeholder="Hola, me gustaria contactar con usted para cotizar una pagina web de mi empresa X" name="message" id="message"></textarea>
                             </div>
                             <button className="bg-gray-600 text-white rounded-xl w-fit p-3 place-self-end hover:[animation:soft-bounce_0.6s_infinite]" type="submit">
-                            Submit
+                            Enviar
                             </button>
                         </form>
                     </div>
