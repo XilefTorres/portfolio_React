@@ -15,7 +15,7 @@ export default function HeroSection(){
                         <p className="w-100 px-5">Especializado en el desarrollo de <strong>videojuegos</strong> 🎮 y <strong>front-end</strong> de paginas web 🛜</p>
                     </div>
                 </div>
-                <div className="flex flex-row gap-5 place-self-center mt-4 md:w-155">
+                <div className="flex flex-row gap-5 mx-auto mt-4 md:w-155">
                     <a className=" bg-[#27062f] border-2 rounded-4xl p-2 flex flex-row gap-2
                             transition-transform hover:scale-115" href="https://www.linkedin.com/in/jorge-xilef-jacobo-torres-4b0029332/">
                         <img className="size-6 place-self-center" 
@@ -37,7 +37,7 @@ export default function HeroSection(){
                 </div>
 
                 <img src='/Logos/arrow_down.webp' 
-                    className='absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce size-10'/>
+                    className='absolute bottom-16 left-1/2 -translate-x-1/2 animate-bounce size-10'/>
             </div>
         </>
     )
