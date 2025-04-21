@@ -37,7 +37,7 @@ export default function HeroSection(){
                 </div>
 
                 <img src='/Logos/arrow_down.webp' 
-                    className='absolute bottom-14 left-1/2 -translate-x-1/2 mx-auto animate-bounce size-10'/>
+                    className='absolute bottom-4 left-1/2 -translate-x-1/2 mx-auto animate-bounce size-10'/>
             </div>
         </>
     )
