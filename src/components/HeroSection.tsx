@@ -2,7 +2,7 @@ export default function HeroSection(){
 
     return(
         <>
-            <div className=" md:w-3/4 h-screen place-content-center place-self-center elemento-fade">
+            <div className=" md:w-3/4 h-screen place-content-center mx-auto elemento-fade">
                 <div className="flex flex-row items-center justify-center mb-8 gap-2">
                     <img src="/mano_saludando.png" className="h-10 animate-rotate"/>
                     <h1 className="sm:text-3xl text-2xl font-bold">Hola, soy <strong>Xilef Torres</strong></h1>
@@ -35,6 +35,9 @@ export default function HeroSection(){
                         <label>Instagram</label>
                     </a>
                 </div>
+
+                <img src='/Logos/arrow_down.webp' 
+                    className='absolute bottom-14 left-1/2 -translate-x-1/2 mx-auto animate-bounce size-10'/>
             </div>
         </>
     )

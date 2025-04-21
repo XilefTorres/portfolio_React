@@ -9,8 +9,6 @@ function App() {
   return (
     <>
       <HeroSection/>
-      <img src='/Logos/arrow_down.webp' 
-          className='mx-auto -translate-y-12 animate-bounce size-10'/>
       
       <Projects/>
 
