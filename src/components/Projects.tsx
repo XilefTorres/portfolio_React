@@ -7,7 +7,7 @@ export default function Projects() {
             <h1 className="font-bold text-3xl">Proyectos</h1>
             <div className="p-4 md:grid md:grid-cols-3 grid grid-cols-1 gap-8">
                 {ProjectsData.map((i, index) => (
-                    <div className="bg-[#862a9b] size-fit rounded-xl overflow-hidden">
+                    <div key={index} className="bg-[#862a9b] size-fit rounded-xl overflow-hidden">
                         <h2 className="p-2">{i.name}</h2>
                         <a href={i.link}>
                             <img className="h-40 w-full mask-fade

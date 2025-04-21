@@ -9,7 +9,7 @@ export default function HeroSection(){
                 </div>
                 <div className="place-items-center place-self-center 
                     md:flex md:flex-row grid grid-cols-1 gap-4">
-                    <img className="size-50 rounded-2xl" src="src/assets/yo.jpg"/>
+                    <img className="size-50 rounded-2xl" src="src/assets/yo.webp"/>
                     <div className="text-justify">
                         <p className="w-100 px-5"><strong>Ingeniero de software</strong> que ama la programacion 🖥️. De Sinaloa, Mexico. 🇲🇽</p>
                         <p className="w-100 px-5">Especializado en el desarrollo de <strong>videojuegos</strong> 🎮 y <strong>front-end</strong> de paginas web 🛜</p>
