@@ -18,10 +18,10 @@ export default function Projects() {
                       />
                     </a>
                   
-                    <p className="p-2 text-white text-sm">{i.description}</p>
+                    <p className="p-2 text-white text-sm text-justify">{i.description}</p>
                   
-                    <div className="flex flex-row gap-2 w-full p-2 justify-center">
-                      <a href={i.link}>
+                    <div className="flex flex-row gap-2 p-2">
+                      <a href={i.link} className="">
                         <img className="size-7" src="/Logos/web.png" alt="Web" />
                       </a>
                       {i.source !== "" && (
