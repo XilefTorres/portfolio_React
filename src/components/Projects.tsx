@@ -5,26 +5,32 @@ export default function Projects() {
     return(
         <div id="Projects" className="place-self-center text-center mb-30 scroll-m-20">
             <h1 className="font-bold text-3xl">Proyectos</h1>
-            <div className="p-4 md:grid md:grid-cols-3 grid grid-cols-1 gap-8">
+            <div className="p-4 : md:grid md:grid-cols-2 grid grid-cols-1 gap-8">
                 {ProjectsData.map((i, index) => (
-                    <div key={index} className="bg-[#862a9b] size-fit rounded-xl overflow-hidden">
-                        <h2 className="p-2">{i.name}</h2>
-                        <a href={i.link}>
-                            <img className="h-40 w-full mask-fade
-                                transition-transform hover:scale-110" src={i.image}/>
+                <div key={index} className="bg-[#862a9b] w-full max-w-sm rounded-xl overflow-hidden mx-auto">
+                    <h2 className="p-2 text-white font-bold text-lg text-center">{i.name}</h2>
+                  
+                    <a href={i.link}>
+                      <img
+                        src={i.image}
+                        className="h-40 w-full object-cover transition-transform hover:scale-110 mask-fade"
+                        alt={i.name}
+                      />
+                    </a>
+                  
+                    <p className="p-2 text-white text-sm">{i.description}</p>
+                  
+                    <div className="flex flex-row gap-2 w-full p-2 justify-center">
+                      <a href={i.link}>
+                        <img className="size-7" src="/Logos/web.png" alt="Web" />
+                      </a>
+                      {i.source !== "" && (
+                        <a href={i.source}>
+                          <img className="size-7" src="/Logos/code.png" alt="Code" />
                         </a>
-                        <p className="max-w-77 p-2">{i.description}</p>
-                        <div className="flex flex-row gap-2 w-full p-2">
-                            <a href={i.link}>
-                                <img className="size-7" src='/Logos/web.png'/>
-                            </a>
-                            {i.source !== "" &&
-                            <a href={i.link}>
-                                <img className="size-7" src='/Logos/code.png'/>
-                            </a>
-                            }
-                        </div>
+                      )}
                     </div>
+                </div>
                 ))}
             </div>
         </div>

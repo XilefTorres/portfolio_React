@@ -28,7 +28,7 @@ export default function Footer() {
                 </div>
                 <div id="Contact" className="p-5 w-full">
                     <h1 className="font-bold text-3xl text-center mb-5">Contacta conmigo</h1>
-                    <div className="bg-white md:w-6/8 w-7/8 h-95 rounded-xl text-black p-5 place-self-center">
+                    <div className="bg-white md:w-9/10 w-9/10 h-95 rounded-xl text-black p-5 mx-auto">
                         <form action="https://formsubmit.co/9512429e5836f5cceb65d51ce3b20ad1" className="grid grid-cols-1 gap-2" method="post"><input type="hidden" name="form-name" value="form 1"/>
                             <div className="grid grid-cols-1 gap-2">
                                 <label className="contact__form-label" htmlFor="name">Nombre</label>

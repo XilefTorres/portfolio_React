@@ -3,7 +3,7 @@ export default function HeroSection(){
     return(
         <>
             <div className=" md:w-3/4 h-screen place-content-center place-self-center elemento-fade">
-                <div className="flex flex-row place-self-center mb-8 gap-2">
+                <div className="flex flex-row items-center justify-center mb-8 gap-2">
                     <img src="/mano_saludando.png" className="h-10 animate-rotate"/>
                     <h1 className="sm:text-3xl text-2xl font-bold">Hola, soy <strong>Xilef Torres</strong></h1>
                 </div>
