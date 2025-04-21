@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <HeroSection/>
-      <img src='src/assets/Logos/arrow_down.webp' 
+      <img src='/Logos/arrow_down.webp' 
           className='place-self-center -translate-y-15 animate-bounce size-10'/>
       
       <Projects/>

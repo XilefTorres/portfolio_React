@@ -16,11 +16,11 @@ export default function Projects() {
                         <p className="max-w-77 p-2">{i.description}</p>
                         <div className="flex flex-row gap-2 w-full p-2">
                             <a href={i.link}>
-                                <img className="size-7" src='src/assets/Logos/web.png'/>
+                                <img className="size-7" src='/Logos/web.png'/>
                             </a>
                             {i.source !== "" &&
                             <a href={i.link}>
-                                <img className="size-7" src='src/assets/Logos/code.png'/>
+                                <img className="size-7" src='/Logos/code.png'/>
                             </a>
                             }
                         </div>
