@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+html{
+  width: 100%;
+  height:max-content;
+  background: #862a9b;
+  background: linear-gradient(180deg, #862a9b 0%, #0d0410 15%);
+  scroll-behavior: smooth;
+}
+body{
+  color: aliceblue;
+}
+h2{
+  font-size: larger;
+}
+p {
+  font-size: medium;
+}
+
+@layer utilities {
+  .mask-fade {
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-size: 100% 97%;
+    mask-repeat: no-repeat;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.elemento-fade {
+  animation: fadeIn 3s ease-in-out; /* Duración y función de tiempo de la animación */
+  animation-fill-mode: forwards; /* Para que el estilo final de la animación permanezca */
+}
+@keyframes scrollDown {
+  from {
+    position: fixed;
+    top: -30px;
+  }
+  to {
+    position: fixed;
+    top: 0px;
+  }
+}
+.elemento-scrollDown {
+  animation: scrollDown 2s ease-in-out; /* Duración y función de tiempo de la animación */
+  animation-fill-mode: forwards; /* Para que el estilo final de la animación permanezca */
+}
+@keyframes scrollX {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-540px);
+  }
+}
+.animate-scrollX {
+  animation: scrollX 7s linear infinite;
+}
+@keyframes rotateHand {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+.animate-rotate{
+  animation: rotateHand 0.7s alternate infinite;
+}
+@keyframes soft-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Ajusta la altura del rebote aquí */
+  }
+}
