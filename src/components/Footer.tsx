@@ -1,3 +1,6 @@
+import { transform } from "motion"
+import { motion } from "motion/react"
+
 export default function Footer() {
 
     return(
@@ -42,9 +45,13 @@ export default function Footer() {
                                 <label className="contact__form-label" htmlFor="message">Mensaje</label>
                                 <textarea className="bg-gray-300 p-2 rounded-xl" required cols={30} rows={3} placeholder="Hola, me gustaria contactar con usted para cotizar una pagina web de mi empresa X" name="message" id="message"></textarea>
                             </div>
-                            <button className="bg-gray-600 text-white rounded-xl w-fit p-3 place-self-end hover:[animation:soft-bounce_0.6s_infinite]" type="submit">
+                            <motion.button className="bg-gray-600 text-white rounded-xl w-fit p-3 place-self-end" type="submit"
+                                            animate={{ 
+                                                y: [0, 5, 0],
+                                                transition: {duration: 1, repeat: Infinity, ease: "easeInOut"} 
+                                            }}>
                             Enviar
-                            </button>
+                            </motion.button>
                         </form>
                     </div>
                 </div>

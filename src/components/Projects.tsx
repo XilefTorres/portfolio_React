@@ -1,4 +1,5 @@
 import { ProjectsData } from "../db/projectsData"
+import { motion } from "motion/react"
 
 export default function Projects() {
 
@@ -7,7 +8,23 @@ export default function Projects() {
             <h1 className="font-bold text-3xl">Proyectos</h1>
             <div className="p-4 : md:grid md:grid-cols-2 grid grid-cols-1 gap-8">
                 {ProjectsData.map((i, index) => (
-                <div key={index} className="bg-[#862a9b] w-full max-w-sm rounded-xl overflow-hidden mx-auto">
+                <motion.div key={index} 
+                            className={`bg-[#862a9b] w-full max-w-sm rounded-xl overflow-hidden mx-auto`}
+                            initial={index % 2 == 0 ? {
+                              opacity: 0,
+                              transform: "translateX(-100px)"
+                            } : {
+                              opacity: 0,
+                              transform: "translateX(100px)"
+                            }}
+                            whileInView={index % 2 == 0 ? {
+                              opacity: 1,
+                              transform: "translateX(0)"
+                            } : {
+                              opacity: 1,
+                              transform: "translateX(0)"
+                            }}
+                            transition={{ duration: 1 }} viewport={{ once: true }}>
                     <h2 className="p-2 text-white font-bold text-lg text-center">{i.name}</h2>
                   
                     <a href={i.link}>
@@ -30,7 +47,7 @@ export default function Projects() {
                         </a>
                       )}
                     </div>
-                </div>
+                </motion.div>
                 ))}
             </div>
         </div>

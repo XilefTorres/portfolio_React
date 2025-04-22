@@ -1,10 +1,21 @@
+import { motion } from "motion/react"
+
 export default function HeroSection(){
 
     return(
         <>
-            <div className="relative md:w-3/4 h-screen place-content-center mx-auto elemento-fade">
+            <motion.div className="relative md:w-3/4 h-screen place-content-center mx-auto"
+                        initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                        transition={{ duration: 2, ease: "easeInOut"}}>
                 <div className="flex flex-row items-center justify-center mb-8 gap-2">
-                    <img src="/mano_saludando.png" className="h-10 animate-rotate"/>
+                    <motion.img src="/mano_saludando.png" className="h-10"
+                                initial={{rotate: -15}} animate={{rotate: 30}}
+                                transition={{
+                                    repeat: Infinity,
+                                    repeatType: "reverse",
+                                    duration: 0.7,
+                                    ease: "easeInOut"
+                                }}/>
                     <h1 className="sm:text-3xl text-2xl font-bold">Hola, soy <strong>Xilef Torres</strong></h1>
                 </div>
                 <div className="place-items-center place-self-center 
@@ -36,9 +47,16 @@ export default function HeroSection(){
                     </a>
                 </div>
 
-                <img src='/Logos/arrow_down.webp' 
-                    className='absolute bottom-20 left-1/2 -translate-x-1/2 animate-bounce size-10'/>
-            </div>
+                <motion.img src='/Logos/arrow_down.webp' 
+                    className='absolute bottom-20 left-1/2 -translate-x-1/2 size-10'
+                    animate={{ translateY: 10 }}
+                    transition={{
+                        repeat: Infinity,
+                        repeatType: "mirror",
+                        duration: 0.8,
+                        ease: "easeInOut"
+                    }}/>
+            </motion.div>
         </>
     )
 }
