@@ -1,4 +1,3 @@
-import { transform } from "motion"
 import { motion } from "motion/react"
 
 export default function Footer() {
